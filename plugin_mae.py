@@ -1,6 +1,8 @@
 # stdlib
 from typing import Any
-
+import sys
+if '-f' in sys.argv:
+    sys.argv.remove('-f')
 # third party
 import numpy as np
 import math, sys
